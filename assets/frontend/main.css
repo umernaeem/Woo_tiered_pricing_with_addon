@@ -1,0 +1,232 @@
+.price-rule-active td {
+    background-color: #cc99c2 !important;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.price-rules-table {
+    margin-top: 15px;
+}
+
+.price-rule-active td {
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.price-rule-active .amount {
+    color: #fff;
+}
+
+.price-rules-table {
+    margin: 15px 0;
+}
+
+.price-rules-table tr{
+    background: #fff;
+}
+
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.price-table-tooltip {
+    padding: 0;
+    width: 250px !important;
+    z-index: 99999;
+}
+
+.price-rules-table-icon {
+    vertical-align: middle;
+}
+
+.price-table-tooltip-svg {
+    margin-left: 8px;
+    width: 15px;
+    cursor: help;
+}
+
+.price-table-tooltip .price-rules-table {
+    margin: 0;
+}
+
+.price-table-tooltip {
+    position: relative;
+}
+
+/**
+* Summary table
+*/
+.tier-pricing-summary-table {
+    margin: 20px 0;
+}
+
+.tier-pricing-summary-table--hidden {
+    display: none;
+}
+
+.tier-pricing-summary-table__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-weight: bold;
+    border-top: 1px solid #f5f5f5;
+}
+
+.tier-pricing-summary-table__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.tier-pricing-summary-table__total {
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+.tier-pricing-summary-table--inline {
+    font-size: 1.3em;
+}
+
+.tier-pricing-summary-table-inline__label {
+    display: inline-block;
+}
+
+/**
+* End summary table
+*/
+
+.woo_tiered_addon_prices_item
+{
+    position: relative;
+    width: 100%;
+}       
+.woo_tiered_addon_prices_name_price
+{
+    width: 75%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.woo_tiered_addon_prices_quantity_selector
+{
+    width: 20%;
+    display: inline-block;
+}
+
+.woo_tiered_addon_prices_container
+{
+    background: #fff;
+}
+.quantity_selector_button .selected_value
+{
+    width: 60px;
+    height: 40px;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 35px;
+    
+}
+.woo_tiered_addon_prices_item
+{
+    border-bottom: 1px solid #333;
+    padding: 10px 10px;
+}
+.quantity_selector_button
+{
+    display: flex;
+    align-items: center;
+
+}
+.quantity_selector_button .negative_button,
+.quantity_selector_button .positive_button
+{
+    cursor: pointer;
+    width: 30px;
+    height: 35px;
+    line-height: 28px;
+    border: 1px solid #e5e5e5;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+
+}
+.price-rules-table-wrapper
+{
+    margin: 20px 0 10px;
+    border-top: 1px solid #333;
+}
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.quantity input
+{
+        width: inherit !important;
+    height: inherit !important;
+    margin: 0 !important;
+    border: 1px solid #333 !important;
+    text-align: center !important;
+    border-radius: 0 !important;
+}
+.quantity .quantity_selector_button .selected_value
+{
+    border:0;
+}
+.quantity .quantity_selector_button .negative_button, .quantity .quantity_selector_button .positive_button
+{
+    border-color:#333;
+}
+
+.xoo-wsc-product dl.variation dd
+{
+    padding-left: 5px;
+}
+.xoo-wsc-product dl.variation dd .amount,
+.xoo-wsc-product dl.variation dt .amount
+{
+    font-size: 13px !important;
+}
+.xoo-wsc-container, .xoo-wsc-slider
+{
+    width: 400px;
+    right: -400px;
+}
+.xoo-wsc-pprice
+{
+    display: none !important;
+}
+dl.variation dd
+{
+    float: right;
+}
+.xoo-wsc-img-col
+{
+    width: 20%;
+}
+@media(max-width: 768px)
+{
+    .woo_tiered_addon_prices_name_price,
+    .woo_tiered_addon_prices_quantity_selector
+    {
+            display: inline-block;
+        float: none;
+        width: 65%;
+        vertical-align: middle;
+
+    }
+    .woo_tiered_addon_prices_quantity_selector
+    {
+        width: 30%;
+    }
+}

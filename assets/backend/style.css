@@ -1,0 +1,281 @@
+.add-new-price-rule {
+
+}
+
+.remove-price-rule {
+    display: inline-block;
+    position: relative;
+    padding: 2px 0 2px 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.remove-price-rule:focus {
+    box-shadow: none !important;
+}
+
+.price-quantity-rule {
+    margin-right: 2% !important;
+    height: auto !important;
+}
+
+.price-quantity-rule--variation:first-child {
+    margin-right: 1.6% !important;
+}
+
+.price-quantity-rule--simple {
+    width: 24% !important;
+}
+
+.price-quantity-rule--variation {
+    width: 23% !important;
+}
+
+/** Buttons **/
+.tpt-button {
+    display: inline-block;
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #fff;
+    transition: .3s all;
+}
+
+.tpt-button:focus, .tpt-button:focus {
+    outline: none;
+    color: #fff;
+}
+
+.tpt-button--default {
+    background: #3D4C53;
+    color: #fff;
+}
+
+.tpt-button--default:hover {
+    background-color: #4a5b63;
+    color: #fff;
+}
+
+.tpt-button--accent {
+
+    background: #08a6a6;
+    color: #fff;
+}
+
+.tpt-button--accent:hover {
+    background-color: #51cece;
+    color: #fff;
+}
+
+.tpt-button--bounce {
+    animation: tpt-bounce-animation 2s infinite;
+    -webkit-animation: tpt-bounce-animation 2s infinite;
+    -moz-animation: tpt-bounce-animation 2s infinite;
+}
+
+.tpt-button--bounce:hover, .tpt-button--bounce:active, .tpt-button--bounce:focus {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+}
+
+/** Alert **/
+
+.tpt-alert {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(61, 76, 83, 0.15);
+    color: #3D4C53;
+    border: 1px solid rgba(61, 76, 83, 0.26);
+}
+
+.tpt-alert__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    fill: #3D4C53;
+}
+
+.tpt-alert__text {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tpt-alert__buttons {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .tpt-alert__icon {
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .tpt-alert__buttons {
+        flex: 1 0 100%;
+    }
+
+    .tpt-alert__text {
+        margin-bottom: 20px;
+        flex: 1 0 100%;
+        line-height: 1;
+    }
+
+    .tpt-alert {
+        text-align: center;
+    }
+}
+
+.tpt-role-based-block {
+    padding: 0 9px 0 162px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.tpt-role-based-block--variation {
+    padding: 0;
+}
+
+.tpt-role-based-role__header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    border: 1px solid #eee;
+    border-bottom: none;
+}
+
+.tpt-role-based-adding-form {
+    margin: 15px 0;
+}
+
+.tpt-role-based-adding-form__add-button {
+    margin-left: 10px !important;
+}
+
+.tpt-role-based-role:last-child .tpt-role-based-role__header {
+    border-bottom: 1px solid #eee;
+}
+
+.tpt-role-based-role:last-child .tpt-role-based-role__content {
+    border-top: none;
+    border-bottom: 1px solid #eee;
+}
+
+.tpt-role-based-role__content {
+    overflow: hidden;
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    display: none;
+    border-bottom: none;
+}
+
+.tpt-role-based-block--variation .tpt-role-based-role__content {
+    padding: 20px;
+    background: #fafafa;
+    border-color: #eee;
+}
+
+.tpt-role-based-block--variation .tpt-role-based-roles {
+    margin: 10px 0;
+}
+
+.tpt-role-based-role-action--delete {
+    color: red;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+
+.tpt-role-based-role-action--delete:hover {
+    color: #a20000;
+}
+
+.tpt-role-based-role__action-toggle-view {
+    padding: 10px;
+    color: #888;
+    cursor: pointer;
+}
+
+.tpt-role-based-role__header .tpt-role-based-role__actions {
+    visibility: hidden;
+}
+
+.tpt-role-based-role:hover .tpt-role-based-role__actions {
+    visibility: visible;
+}
+
+.tpt-role-based-role__action-toggle-view:hover {
+    color: #000;
+}
+
+.tpt-role-based-role__action-toggle-view--open:before {
+    content: "▼" !important;
+}
+
+.tpt-role-based-role__action-toggle-view--close:before {
+    content: "▲" !important;
+}
+
+/** Animation **/
+
+@-webkit-keyframes tpt-bounce-animation {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-5px);
+    }
+    60% {
+        -webkit-transform: translateY(-2px);
+    }
+}
+
+@-moz-keyframes tpt-bounce-animation {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-5px);
+    }
+    60% {
+        -moz-transform: translateY(-2px);
+    }
+}
+
+@-o-keyframes tpt-bounce-animation {
+    0%, 20%, 50%, 80%, 100% {
+        -o-transform: translateY(0);
+    }
+    40% {
+        -o-transform: translateY(-5px);
+    }
+    60% {
+        -o-transform: translateY(-2px);
+    }
+}
+
+@keyframes tpt-bounce-animation {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-2px);
+    }
+}
